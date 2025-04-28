@@ -1,6 +1,11 @@
-﻿namespace BulkyWEB.Data;
+﻿using Microsoft.EntityFrameworkCore;
 
-public class ApplicationDbContext
+namespace BulkyWEB.Data;
+
+public class ApplicationDbContext:DbContext
 {
-    
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+    {
+        
+    }
 }
